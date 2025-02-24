@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Body Styling */
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Success Message */
+.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Test Result */
+.test-result {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* History List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+li:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
