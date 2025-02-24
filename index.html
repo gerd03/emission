@@ -3,50 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emission Test Tracker</title>
+    <title>Emission Test System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>EMISSION TEST TRACKER</h1>
+        <h1>FAKE EMISSION TEST GENERATOR</h1>
 
-        <form id="testForm">
+        <div class="input-section">
             <label for="plateNumber">PLATE NUMBER:</label>
-            <input type="text" id="plateNumber" required>
-
+            <input type="text" id="plateNumber" placeholder="Enter Plate Number">
+            
             <label for="vehicleType">VEHICLE TYPE:</label>
-            <select id="vehicleType" required>
-                <option value="HEAVY EQUIPMENT">HEAVY EQUIPMENT</option>
-                <option value="SERVICE VEHICLE">SERVICE VEHICLE</option>
-                <option value="MOTORCYCLE">MOTORCYCLE</option>
+            <select id="vehicleType">
+                <option value="Motorcycle">MOTORCYCLE</option>
+                <option value="Heavy Equipment">HEAVY EQUIPMENT</option>
+                <option value="Service Vehicle">SERVICE VEHICLE</option>
             </select>
 
             <label for="fuelType">FUEL TYPE:</label>
-            <select id="fuelType" required>
-                <option value="DIESEL - WITH TURBO">DIESEL - WITH TURBO</option>
-                <option value="DIESEL - NONE TURBO">DIESEL - NONE TURBO</option>
-                <option value="GASOLINE">GASOLINE</option>
+            <select id="fuelType">
+                <option value="Diesel - None Turbo">DIESEL - NONE TURBO</option>
+                <option value="Gasoline">GASOLINE</option>
             </select>
 
-            <button type="submit">GENERATE TEST</button>
-        </form>
+            <button id="generateBtn">GENERATE TEST</button>
+        </div>
 
-        <div id="successMessage" class="success hidden">✅ SUCCESSFULLY GENERATED</div>
-
-        <!-- Test Result -->
-        <div id="testResult" class="test-result hidden"></div>
+        <div id="loadingAnimation" class="hidden">BE PATIENT TRUST THE PROCESS...</div>
+        <div id="testResult" class="hidden"></div>
 
         <h2>TEST HISTORY</h2>
         <ul id="historyList"></ul>
-
-        <!-- History Details View -->
-        <div id="historyDetails" class="test-result hidden"></div>
-
         <button id="clearHistory">CLEAR HISTORY</button>
 
         <footer>
-            <p>PREPARED BY: ALEJANDRO MARTINEZ JR.</p>
+            PREPARED BY: ALEJANDRO MARTINEZ JR.
         </footer>
     </div>
 
